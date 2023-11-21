@@ -1,6 +1,8 @@
 const { v4: uuidv4 } = require('uuid');
 const { validationResult } = require('express-validator')
+const jwt = require('jsonwebtoken');
 const HttpError = require('../model/http-error')
+const bcryptjs = require('bcryptjs');
 const { db } = require('../db.js')
 
 
@@ -19,8 +21,13 @@ const getUsers = (req, res, next) => {
     if (!errors.isEmpty()) {
       throw new HttpError('請檢查是否都有填寫', 422);
     }
+
+    
     const { name, email, password } = req.body;
-  
+    
+    const salt = bcryptjs.genSaltSync(10)
+    const hashedPassword = bcryptjs.hashSync(password, salt)
+
     db.query('SELECT * FROM user WHERE email = ?', [email], (err, results) => {
       if (err) {
         console.log(err);
@@ -35,7 +42,7 @@ const getUsers = (req, res, next) => {
         id: uuidv4(),
         name,
         email,
-        password
+        password: hashedPassword
       };
   
       db.query('INSERT INTO user SET ?', newUser, (err) => {
@@ -49,28 +56,44 @@ const getUsers = (req, res, next) => {
     });
   };
 
+
   const login = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       throw new HttpError('請檢查是否都有填寫', 422);
     }
   
+    console.log(req.body);
     const { email, password } = req.body;
   
-    db.query('SELECT * FROM user WHERE email = ? AND password = ?', [email, password], (err, results) => {
+    db.query('SELECT * FROM user WHERE email = ?', [email], (err, results) => {
       if (err) {
         return next(new HttpError('Login failed, please try again later.', 500));
       }
   
       if (results.length === 0) {
+        return next(new HttpError('Invalid credentials, user does not exist.', 401));
+      }
+  
+      const loggedInUser = results[0];
+  
+      const checkPassword = bcryptjs.compareSync(password, loggedInUser.password);
+      if (!checkPassword) {
         return next(new HttpError('Invalid credentials, please check your email and password.', 401));
       }
   
-      // 登入成功，可以根據需要返回用戶信息或其他數據
-      const loggedInUser = results[0];
-      res.status(200).json({ user: loggedInUser, message:"is login" });
+      const token = jwt.sign({ id: loggedInUser.id }, "secretkey", { expiresIn: '1h' });
+  
+      const { password: userPassword, ...others } = loggedInUser;
+  
+      res.cookie("accessToken", token, {
+        httpOnly: true,
+      }).status(200).json({ user: others, token });
     });
   };
+  
+
+  
 
 exports.getUsers = getUsers
 exports.login = login
