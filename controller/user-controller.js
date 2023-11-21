@@ -19,7 +19,7 @@ const getUsers = (req, res, next) => {
   const signup = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      throw new HttpError('請檢查是否都有填寫', 422);
+      throw new HttpError('Please check if all fields are filled in.', 422);
     }
 
     
@@ -35,7 +35,7 @@ const getUsers = (req, res, next) => {
       }
   
       if (results.length > 0) {
-        return next(new HttpError('email已經被使用過了', 422));
+        return next(new HttpError('Email has already been used', 422));
       }
   
       const newUser = {
@@ -60,7 +60,7 @@ const getUsers = (req, res, next) => {
   const login = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      throw new HttpError('請檢查是否都有填寫', 422);
+      throw new HttpError('Please check if all fields are filled in', 422);
     }
   
     console.log(req.body);
