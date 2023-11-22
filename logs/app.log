@@ -1,0 +1,12 @@
+[2023-11-22T10:29:57.337] [INFO] default - API/Function 開始
+[2023-11-22T10:29:57.340] [INFO] default - API/Function 結束
+[2023-11-22T10:29:57.343] [INFO] default - User value [object Object],[object Object],[object Object],[object Object],[object Object]
+[2023-11-22T10:31:02.044] [INFO] default - API/Function 開始
+[2023-11-22T10:31:02.047] [INFO] default - API/Function 結束
+[2023-11-22T10:31:02.049] [INFO] default - User value undefined
+[2023-11-22T10:34:32.923] [INFO] default - API/Function 開始
+[2023-11-22T10:34:32.987] [INFO] default - API/Function 結束
+[2023-11-22T10:34:32.990] [ERROR] default - Email has already been used 422
+[2023-11-22T10:35:17.552] [INFO] default - API/Function 開始
+[2023-11-22T10:35:58.605] [INFO] default - API/Function 開始
+[2023-11-22T10:35:58.607] [ERROR] default - Please check if all fields are filled in.

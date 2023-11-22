@@ -1,6 +1,6 @@
 const express = require('express');
 const { check } = require('express-validator')
-
+const { checkJwt } = require('../model/check-jwt')
 const userControllers = require('../controller/user-controller');
 
 const router = express.Router();
@@ -23,6 +23,8 @@ router.post(
         check('password').isLength({min: 6})
     ],
     userControllers.login)
+
+router.post('/logout', checkJwt,userControllers.logout)
 
 
 module.exports = router;
