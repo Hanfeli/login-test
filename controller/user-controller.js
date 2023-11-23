@@ -28,7 +28,7 @@ const getUsers = (req, res, next) => {
       logger.error(err)
       return next(new HttpError('Fetching users failed, please try again later.', 500));
     }
-    logger.info(`User value ${results.name}`);
+    console.log(results);
     res.json({ users: results });
   });
   logger.info('API/Function 結束');
@@ -131,11 +131,61 @@ const getUsers = (req, res, next) => {
     logger.info('API/Function 結束');
   }
 
+  const getUserProfile = (req, res, next) => {
+    logger.info('API/Function 開始');
+    const userId = req.userData.id;
+  
+    db.query('SELECT id, name, email, place, age FROM user WHERE id = ?', [userId], (err, results) => {
+      if (err) {
+        logger.error(err);
+        return next(new HttpError('Fetching user profile failed, please try again later.', 500));
+      }
+  
+      if (results.length === 0) {
+        logger.error('User not found', 404);
+        return next(new HttpError('User not found', 404));
+      }
+  
+      const userProfile = results[0];
+      logger.info(`User profile: ${JSON.stringify(userProfile)}`);
+      res.json({ user: userProfile });
+    });
+    logger.info('API/Function 結束');
+  };
+
+  const updateUser = (req, res, next) => {
+    logger.info('API/Function 開始');
+    const userId = req.userData.id;
+    const { name, place, age } = req.body;
+  
+    const updateData = {};
+    if (name) {
+      updateData.name = name;
+    }
+    if (place) {
+      updateData.place = place;
+    }
+    if (age) {
+      updateData.age = age;
+    }
+  
+    db.query('UPDATE user SET ? WHERE id = ?', [updateData, userId], (err) => {
+      if (err) {
+        logger.error(err);
+        return next(new HttpError('User update failed, please try again later.', 500));
+      }
+  
+      logger.info('User updated successfully.');
+      res.status(200).json({ message: 'User updated successfully.' });
+    });
+    logger.info('API/Function 結束');
+  };
   
 
-  
 
+exports.updateUser = updateUser;
 exports.getUsers = getUsers
 exports.login = login
 exports.signup = signup
 exports.logout = logout
+exports.getUserProfile = getUserProfile

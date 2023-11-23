@@ -26,5 +26,18 @@ router.post(
 
 router.post('/logout', checkJwt,userControllers.logout)
 
+router.get('/userProfile', checkJwt,userControllers.getUserProfile)
+
+router.patch(
+    '/update',
+    checkJwt,
+    [
+      check('username').optional(),
+      check('place').optional(),
+      check('age').optional(),
+    ],
+    userControllers.updateUser
+);
+
 
 module.exports = router;
