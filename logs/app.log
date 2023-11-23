@@ -107,3 +107,172 @@
 [2023-11-23T11:18:22.292] [INFO] default - API/Function 開始
 [2023-11-23T11:18:22.292] [INFO] default - API/Function 結束
 [2023-11-23T11:18:22.295] [INFO] default - User profile: {"id":"53628402-0f5a-46eb-9fa2-0787a8b15422","name":"han-sheng","email":"text5@gmail.com","place":"taipei","age":"23"}
+[2023-11-23T11:43:05.066] [INFO] default - API/Function 開始
+[2023-11-23T11:43:05.068] [INFO] default - newUser TOKEN felix-han
+[2023-11-23T11:43:05.071] [INFO] default - API/Function 結束
+[2023-11-23T11:43:25.200] [INFO] default - API/Function 開始
+[2023-11-23T11:43:25.201] [INFO] default - API/Function 結束
+[2023-11-23T11:43:25.270] [INFO] default - newUser TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzNjI4NDAyLTBmNWEtNDZlYi05ZmEyLTA3ODdhOGIxNTQyMiIsIm5hbWUiOiJoYW4tc2hlbmciLCJlbWFpbCI6InRleHQ1QGdtYWlsLmNvbSIsImlhdCI6MTcwMDcxMTAwNSwiZXhwIjoxNzAwNzE0NjA1fQ.PEAaW1aUbzWH7KwohLB_xwsgVX0vfDoFeyo-SayKIDU
+[2023-11-23T11:43:37.081] [INFO] default - API/Function 開始
+[2023-11-23T11:43:37.081] [INFO] default - newUser TOKEN han-sheng
+[2023-11-23T11:43:37.082] [INFO] default - API/Function 結束
+[2023-11-23T11:43:53.162] [INFO] default - API/Function 開始
+[2023-11-23T11:43:53.163] [INFO] default - API/Function 結束
+[2023-11-23T11:43:53.221] [INFO] default - newUser TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzNjI4NDAyLTBmNWEtNDZlYi05ZmEyLTA3ODdhOGIxNTQyMiIsIm5hbWUiOiJoYW4tc2hlbmciLCJlbWFpbCI6InRleHQ1QGdtYWlsLmNvbSIsImlhdCI6MTcwMDcxMTAzMywiZXhwIjoxNzAwNzE0NjMzfQ.mFYG8c0YR2IFnt5FXcffoD4fAa4o0_vMX2n6fXSkCTg
+[2023-11-23T11:43:58.744] [INFO] default - API/Function 開始
+[2023-11-23T11:43:58.744] [INFO] default - API/Function 結束
+[2023-11-23T11:43:58.745] [INFO] default - User profile: {"id":"53628402-0f5a-46eb-9fa2-0787a8b15422","name":"han-sheng","email":"text5@gmail.com","place":"taipei","age":"23"}
+[2023-11-23T13:47:10.410] [INFO] default - API/Function 開始
+[2023-11-23T13:47:10.411] [INFO] default - API/Function 結束
+[2023-11-23T13:47:10.470] [INFO] default - newUser TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUzNjI4NDAyLTBmNWEtNDZlYi05ZmEyLTA3ODdhOGIxNTQyMiIsIm5hbWUiOiJoYW4tc2hlbmciLCJlbWFpbCI6InRleHQ1QGdtYWlsLmNvbSIsImlhdCI6MTcwMDcxODQzMCwiZXhwIjoxNzAwNzIyMDMwfQ.9xKB8H0I-R8TYvkOJFNrrXL2AUN1ilQZraj4M0lkANI
+[2023-11-23T13:47:27.524] [INFO] default - API/Function 開始
+[2023-11-23T13:47:27.525] [INFO] default - API/Function 結束
+[2023-11-23T13:47:27.526] [INFO] default - User profile: {"id":"53628402-0f5a-46eb-9fa2-0787a8b15422","name":"han-sheng","email":"text5@gmail.com","place":"taipei","age":"23"}
+[2023-11-23T15:42:47.852] [INFO] default - API/Function 開始
+[2023-11-23T15:42:47.854] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at login (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:276:37)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\Users\Gh890\2.0\login-test\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-11-23T15:43:16.256] [INFO] default - API/Function 開始
+[2023-11-23T15:43:16.257] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at signup (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:239:37)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\Users\Gh890\2.0\login-test\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-11-23T15:53:41.437] [INFO] default - API/Function 開始
+[2023-11-23T15:53:41.439] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at signup (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:239:37)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\Users\Gh890\2.0\login-test\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-11-23T15:55:05.262] [INFO] default - API/Function 開始
+[2023-11-23T15:55:05.263] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findOne')
+    at signup (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:239:37)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at middleware (C:\Users\Gh890\2.0\login-test\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-11-23T16:00:53.563] [INFO] default - API/Function 開始
+[2023-11-23T16:00:53.563] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:219:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:04:12.123] [INFO] default - API/Function 開始
+[2023-11-23T16:04:12.124] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:220:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:08:33.430] [INFO] default - API/Function 開始
+[2023-11-23T16:08:33.432] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:221:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:12:39.049] [INFO] default - API/Function 開始
+[2023-11-23T16:12:39.050] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:219:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:21:56.783] [INFO] default - API/Function 開始
+[2023-11-23T16:21:56.785] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:219:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:25:00.015] [INFO] default - API/Function 開始
+[2023-11-23T16:25:00.017] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'findAll')
+    at getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:221:30)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Gh890\2.0\login-test\node_modules\express\lib\router\index.js:47:12)
+[2023-11-23T16:26:55.984] [INFO] default - API/Function 開始
+[2023-11-23T16:26:55.988] [ERROR] default - Error
+    at Query.run (C:\Users\Gh890\2.0\login-test\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at C:\Users\Gh890\2.0\login-test\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\Gh890\2.0\login-test\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async user.findAll (C:\Users\Gh890\2.0\login-test\node_modules\sequelize\lib\model.js:1140:21)
+    at async getUsers (C:\Users\Gh890\2.0\login-test\controller\user-controller.js:220:19) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:478:34)
+      at PacketParser.onPacket (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:376:12)
+      at readableAddChunk (node:internal/streams/readable:349:9)
+      at Readable.push (node:internal/streams/readable:286:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'SELECT `id`, `name`, `email`, `password`, `place`, `age`, `createdAt`, `updatedAt` FROM `user` AS `user`;',
+    parameters: undefined
+  },
+  original: Error: Unknown column 'createdAt' in 'field list'
+      at Packet.asError (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:478:34)
+      at PacketParser.onPacket (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Gh890\2.0\login-test\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:376:12)
+      at readableAddChunk (node:internal/streams/readable:349:9)
+      at Readable.push (node:internal/streams/readable:286:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'createdAt' in 'field list'",
+    sql: 'SELECT `id`, `name`, `email`, `password`, `place`, `age`, `createdAt`, `updatedAt` FROM `user` AS `user`;',
+    parameters: undefined
+  },
+  sql: 'SELECT `id`, `name`, `email`, `password`, `place`, `age`, `createdAt`, `updatedAt` FROM `user` AS `user`;',
+  parameters: {}
+}

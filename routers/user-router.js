@@ -1,6 +1,6 @@
 const express = require('express');
 const { check } = require('express-validator')
-const { checkJwt } = require('../model/check-jwt')
+const { checkJwt } = require('../utils/check-jwt')
 const userControllers = require('../controller/user-controller');
 
 const router = express.Router();
