@@ -1,20 +1,8 @@
-// const mysql2 = require('mysql2')
-
-// const db = mysql2.createConnection({
-//     host: "127.0.0.1",
-//     user: "root",
-//     password: "KenKone@2#",
-//     database: "sys"
-// })
-
-// exports.db = db
-
-
-
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('sys', 'root', 'KenKone@2#', {
-  host: '127.0.0.1',
+const sequelize = new Sequelize('EVAS_GI', 'root', 'ken82822428kone', {
+  host: '192.168.50.20',
+  port: 33082,
   dialect: 'mysql',
 });
 

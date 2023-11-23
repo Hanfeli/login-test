@@ -42,7 +42,7 @@ app.use((error, req, res, next) => {
     res.json({ message: error.message || 'An unknown error occurred' });
 });
 
-sequelize.sync({ force: false }) // 自动创建数据库表，如果 force 为 true 则会删除已存在的表
+sequelize.sync({ force: false }) 
     .then(() => {
         app.listen(8000, () => {
             console.log('Server is running on port 8000');
